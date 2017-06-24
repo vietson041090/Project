@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="loginLayout" template="/VIEW/Tile/layout_login.jsp"></definition>
+	<definition name="login" extends="loginLayout">
+		<put-attribute name="title" value="Đăng nhập" />
+		<put-attribute name="body" value="/VIEW/login.jsp" />
+	</definition>
+
+	<definition name="cpanelLayout" template="/VIEW/Tile/layout_cpanel.jsp">
+		<put-attribute name="header" value="/VIEW/Tile/h.jsp" />
+		<put-attribute name="footer" value="/VIEW/Tile/f.jsp" />
+		<put-attribute name="menu" value="/VIEW/Tile/menu.jsp" />
+		<put-attribute name="body" value="/VIEW/index.jsp" />
+	</definition>
+
+	<definition name="error" extends="loginLayout">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/VIEW/error.jsp" />
+	</definition>
+
+	<definition name="index" extends="cpanelLayout">
+		<put-attribute name="title" value="Trang chủ" />
+		<put-attribute name="body" value="/VIEW/index.jsp" />
+	</definition>
+
+
+
+	<definition name="view_profile" extends="cpanelLayout">
+		<put-attribute name="title" value="Thông tin nhân viên" />
+		<put-attribute name="body" value="/VIEW/view_profile.jsp" />
+	</definition>
+	<definition name="add_loa" extends="cpanelLayout">
+		<put-attribute name="title" value="Tạo đơn xin nghỉ phép" />
+		<put-attribute name="body" value="/VIEW/add_loa.jsp" />
+	</definition>
+	<definition name="time_report" extends="cpanelLayout">
+		<put-attribute name="title" value="Thống kê theo thời gian" />
+		<put-attribute name="body" value="/VIEW/time_report.jsp" />
+	</definition>
+	<definition name="day_report" extends="cpanelLayout">
+		<put-attribute name="title" value="Thống kê theo ngày" />
+		<put-attribute name="body" value="/VIEW/day_report.jsp" />
+	</definition>
+	<definition name="waiting_loa" extends="cpanelLayout">
+		<put-attribute name="title" value="Danh sách đơn chờ duyệt" />
+		<put-attribute name="body" value="/VIEW/waiting_loa.jsp" />
+	</definition>
+	
+	<definition name="view_loa_list" extends="cpanelLayout">
+		<put-attribute name="title" value="Danh sách đơn xin nghỉ phép" />
+		<put-attribute name="body" value="/VIEW/view_loa_list.jsp" />
+	</definition>
+
+	<definition name="edit_project" extends="cpanelLayout">
+		<put-attribute name="title" value="Sửa dự án" />
+		<put-attribute name="body" value="/VIEW/edit_project.jsp" />
+	</definition>
+
+	<definition name="authorization" extends="cpanelLayout">
+		<put-attribute name="title" value="Ủy Quyền" />
+		<put-attribute name="body" value="/VIEW/authorization.jsp" />
+	</definition>
+
+	<definition name="changePassword" extends="cpanelLayout">
+		<put-attribute name="title" value="Trang chủ" />
+		<put-attribute name="body" value="/VIEW/change_password.jsp" />
+	</definition>
+
+	<definition name="editUser" extends="cpanelLayout">
+		<put-attribute name="title" value="Trang chủ" />
+		<put-attribute name="body" value="/VIEW/edit_user.jsp" />
+	</definition>
+	<definition name="view_loa" extends="cpanelLayout">
+		<put-attribute name="title" value="Xem đơn" />
+		<put-attribute name="body" value="/VIEW/view_loa.jsp" />
+	</definition>
+	<definition name="editUserForm" extends="cpanelLayout">
+		<put-attribute name="title" value="Trang chủ" />
+		<put-attribute name="body" value="/VIEW/edit_user.jsp" />
+	</definition>
+	
+
+	<definition name="new_user" extends="cpanelLayout">
+		<put-attribute name="title" value="Trang chủ" />
+		<put-attribute name="body" value="/VIEW/new_user.jsp" />
+	</definition>
+	
+	<definition name="new_user_form" extends="cpanelLayout">
+		<put-attribute name="title" value="Trang chủ" />
+		<put-attribute name="body" value="/VIEW/new_user.jsp" />
+	</definition>
+	
+
+	<definition name="viewProjectInfo" extends="cpanelLayout">
+		<put-attribute name="title" value="Trang chủ" />
+		<put-attribute name="body" value="/VIEW/view_project_info.jsp" />
+	</definition>
+	
+	<definition name="approve_loa" extends="cpanelLayout">
+		<put-attribute name="title" value="Duyệt đơn" />
+		<put-attribute name="body" value="/VIEW/approve_loa.jsp" />
+	</definition>
+
+
+	<definition name="view_listEmpPrj" extends="cpanelLayout">
+		<put-attribute name="title" value="Danh sách người dùng" />
+		<put-attribute name="body" value="/VIEW/list_user.jsp" />
+	</definition>
+
+	
+	<definition name="view_listPrj" extends="cpanelLayout">
+		<put-attribute name="title" value="Danh sách dự án" />
+		<put-attribute name="body" value="/VIEW/list_project.jsp" />
+	</definition>
+
+	
+	<definition name="edit_loa" extends="cpanelLayout">
+		<put-attribute name="title" value="Chỉnh sửa đơn xin nghĩ phép " />
+		<put-attribute name="body" value="/VIEW/edit_loa.jsp" />
+	</definition>
+	
+	<definition name="deleteLoa" extends="cpanelLayout">
+		<put-attribute name="title" value="Chỉnh sửa đơn xin nghĩ phép " />
+		<put-attribute name="body" value="/VIEW/delete_loa_success.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="view_loa_history" extends="cpanelLayout">
+		<put-attribute name="title" value="Lịch sử duyệt đơn " />
+		<put-attribute name="body" value="/VIEW/list_loahistory.jsp" />
+	</definition>
+
+</tiles-definitions>

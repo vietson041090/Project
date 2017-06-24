@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration status="warn" name="HelloLog" packages="">
+	<!-- Logging definition -->
+	<Appenders>
+		<!-- file -->
+		<RollingFile name="LogFile" fileName="E:/log/last.log"
+			filePattern="E:/log/$${date:yyyy-MM-dd}/log-%d{HH-mm}-%i.log.gz">
+			<PatternLayout>
+				<pattern>%d %p %C{1.} [%t] (%F:%L) %m%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<!-- max file size -->
+				<SizeBasedTriggeringPolicy size="10 KB" />
+				<!-- daily -->
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+			</Policies>
+			<DefaultRolloverStrategy max="999" />
+		</RollingFile>
+
+		<!-- console -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} (%F:%L) - %msg%n" />
+		</Console>
+	</Appenders>
+
+	<!-- logger catching -->
+	<Loggers>
+		<!-- action level -->
+		<Logger name="com.ol.action.IndexAction" level="debug">
+			<AppenderRef ref="Console" />
+		</Logger>
+
+		<!-- root level -->
+		<Root level="debug">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>

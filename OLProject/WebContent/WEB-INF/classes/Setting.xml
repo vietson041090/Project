@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<Setting>
+	<loa>
+		<type>
+			<NoSalary>1</NoSalary>
+			<HasSalary>2</HasSalary>
+		</type>
+	</loa>
+	<employee>
+		<group>
+			<Admin>1</Admin>
+			<Bo>2</Bo>
+			<User>3</User>
+		</group>
+		<max_loa_day>12</max_loa_day>
+	</employee>
+	
+	<MailServer>
+		<Host>smtp.gmail.com</Host>
+		<Port>587</Port>
+		<MailFrom>training.delivery.vn@gmail.com</MailFrom>
+		<PassWord>deliveryvn</PassWord>
+	</MailServer>
+	
+	<LetterStatus>
+		<Status>
+			<id>-1</id>
+			<value>Bị xóa</value>
+		</Status>
+		<Status>
+			<id>0</id>
+			<value>Mới</value>
+		</Status>
+		<Status>
+			<id>1</id>
+			<value>Đã gởi</value>
+		</Status>
+		<Status>
+			<id>2</id>
+			<value>Chờ duyệt</value>
+		</Status>
+		<Status>
+			<id>3</id>
+			<value>Đã duyệt</value>
+		</Status>
+		<Status>
+			<id>4</id>
+			<value>Đã từ chối</value>
+		</Status>
+		<Status>
+			<id>5</id>
+			<value>Đã hủy</value>
+		</Status>
+	</LetterStatus>	<ProjectRole>
+		<Role>
+			<id>1</id>
+			<value>PG</value>
+		</Role>
+		<Role>
+			<id>2</id>
+			<value>LD</value>
+		</Role>
+		<Role>
+			<id>3</id>
+			<value>MN</value>
+		</Role>
+		<Role>
+			<id>4</id>
+			<value>Khác</value>
+		</Role>
+	</ProjectRole>
+
+	<LetterAction>
+		<Action>
+			<id>-1</id>
+			<value>Xóa</value>
+		</Action>
+		<Action>
+			<id>0</id>
+			<value>Tạo Mới</value>
+		</Action>
+		<Action>
+			<id>1</id>
+			<value>Đã gởi</value>
+		</Action>
+		<Action>
+			<id>2</id>
+			<value>Duyệt</value>
+		</Action>
+		<Action>
+			<id>3</id>
+			<value>Duyệt</value>
+		</Action>
+		<Action>
+			<id>4</id>
+			<value>Từ chối</value>
+		</Action>
+		<Action>
+			<id>5</id>
+			<value>Hủy</value>
+		</Action>
+	</LetterAction>
+</Setting>

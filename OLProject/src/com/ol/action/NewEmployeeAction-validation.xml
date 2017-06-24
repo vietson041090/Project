@@ -1,0 +1,42 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.3//EN"
+       "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+
+  <field name="sEmail">
+      <field-validator type="requiredstring" short-circuit="true">
+          <message>Email không được bỏ trống.</message>
+      </field-validator>
+       <field-validator type="email">
+          <message>Email không đúng định dạng.</message>
+      </field-validator>
+  </field>
+
+	<field name="sID">
+	      <field-validator type="requiredstring">
+	          <message>Mã nhân viên không được bỏ trống.</message>
+	      </field-validator>
+	</field>
+  
+
+  <field name="sFullname">
+     <field-validator type="requiredstring">
+          <message>Tên nhân viên không được bỏ trống.</message>
+      </field-validator>
+  </field>
+  
+   <field name="dBirthday">
+      <field-validator type="requiredstring">
+          <message>Ngày sinh không được bỏ trống.</message>
+      </field-validator> 
+  </field>
+  
+    <field name="dStartday">
+      <field-validator type="requiredstring">
+          <message>Ngày vào làm không được bỏ trống.</message>
+      </field-validator> 
+  </field>
+ 
+ 
+ 
+</validators>

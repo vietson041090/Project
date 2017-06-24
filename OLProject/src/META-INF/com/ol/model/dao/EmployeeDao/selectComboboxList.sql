@@ -1,0 +1,1 @@
+select sFullname,sID from OL_Employee where iStatus=1

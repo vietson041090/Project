@@ -1,0 +1,1 @@
+select COUNT(iID) from OL_Authorization where sEmpID =/*sEmpID*/'140014OOV' and iStatus>0
