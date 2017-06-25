@@ -2,7 +2,7 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%@ taglib prefix="display" uri="http://displaytag.sf.net"%>
 
-
+</br>
 <s:if test="ret > 0">
 	<s:actionerror />
 </s:if>
